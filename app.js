@@ -31,7 +31,9 @@ app.get('/', function (req, res) {
 app.get('/admin', function (req, res) {
   res.send('This is admin page.');
 });
-
+app.get('/test', function(req,res){
+	res.send('Test');
+});
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
